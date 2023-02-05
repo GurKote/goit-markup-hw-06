@@ -451,6 +451,26 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <h2 class="subscribe-title section-suptitle">Subscribe</h2>
+          <form action="#" class="subscribe-form">
+            <lable for: class="subscribe-filed">
+              <input
+                type="email"
+                name="user_email"
+                class="subscribe-input"
+                required
+                placeholder="E-mail"
+              />
+            </lable>
+
+            <button type="submit" class="modal-form-submit">Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons/sprite.svg#subscribe"></use>
+                </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -520,26 +540,33 @@
             </span>
           </label>
 
-          <label for="username" class="modal-form-filed">
+          <label for="user_messege" class="modal-form-filed">
             <span class="modal-form-input-desc">Comment</span>
             <textarea
-              class="modal-form-input"
               name="user_messege"
               class="modal-form-messege"
               placeholder="Text input"
             ></textarea>
           </label>
 
-          <input
-            id="user-policy"
-            type="checkbox"
-            name="user_policy"
-            class="modal-form-check"
-          />
-          <label for="user-policy" class="modal-form-check-desc">
-            I accept the terms and conditions of the
-            <a href="Privacy Policy">Privacy Policy</a></label
-          >
+          <label for="user-policy" class="user-policy-filed">
+            <input
+              id="user-policy"
+              type="checkbox"
+              name="user_policy"
+              class="modal-form-check-input visually-hidden"
+            />
+            <span class="policy-icon-box">
+              <svg class="policy-icon-check" width="10" height="8">
+                <use href="./images/icons/sprite.svg#checkbox"></use>
+              </svg>
+            </span>
+            <span class="user-policy-desc">
+              I accept the terms and conditions of the
+              <a href="Privacy Policy">Privacy Policy</a>
+            </span>
+          </label>
+
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
       </div>
